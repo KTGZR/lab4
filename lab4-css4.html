@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Простое анимированное меню</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 15px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav li:hover {
+      background-color: #555;
+    }
+
+    nav li ul {
+      position: absolute;
+      top: 40px;
+      left: 700px;
+      width: 150px;
+      background-color: #333;
+      color: #fff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Домой</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Услуги</a>
+        <ul>
+          <li><a href="#">Услуга 1</a></li>
+          <li><a href="#">Услуга 2</a></li>
+          <li><a href="#">Услуга 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

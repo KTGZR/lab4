@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+
+.static {
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.relative {
+  position: relative;
+  background-color: lightgreen;
+  padding: 10px;
+  margin-bottom: 10px;
+  top: 20px;
+  left: 10px;
+}
+
+
+.absolute {
+  position: absolute;
+  background-color: lightcoral;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+}
+
+
+.fixed {
+  position: fixed;
+  background-color: lightpink;
+  padding: 10px;
+  top: 50px;
+  right: 20px;
+}
+
+.sticky {
+  position: sticky;
+  background-color: lightyellow;
+  padding: 10px;
+  top: 100px;
+}
+
+
+.sticky-container {
+  height: 500px; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Статическое позиционирование</h2>
+  <div class="static">Этот элемент имеет статическое позиционирование (по умолчанию).</div>
+
+  <h2>Относительное позиционирование</h2>
+  <div class="relative">Этот элемент имеет относительное позиционирование. Он смещен на 20px вниз и на 10px вправо.</div>
+
+  <h2>Абсолютное позиционирование</h2>
+  <div class="absolute">Этот элемент имеет абсолютное позиционирование. Он находится в правом верхнем углу контейнера.</div>
+
+  <h2>Фиксированное позиционирование</h2>
+  <div class="fixed">Этот элемент имеет фиксированное позиционирование. Он остается на своем месте при прокрутке страницы.</div>
+
+  <h2>Липкое позиционирование</h2>
+  <div class="sticky-container">
+    <div class="sticky">Этот элемент имеет липкое позиционирование. Он становится "липким" при прокрутке, когда достигает верхней границы экрана.</div>
+  </div>
+
+</div>
+
+</body>
+</html>
